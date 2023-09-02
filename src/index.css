@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url('./assets/bg.svg');
+    z-index: 2;
+    background-color: black;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+@media (max-width:640px) {
+    .img-1,.img-2{
+        display: none;
+    }
+
+    .footer{
+        position: static;
+    }
+
+    .footer div{
+        margin-top: 4px;
+    }
+
+    .content p {
+        font-size: 120px;
+    }
+
+    .content img{
+        width: 230px;
+    }
+}
+
+
+@media (max-width:400px) {
+    .content p {
+        font-size: 100px;
+    }
+
+    .content img{
+        width: 180px;
+    }
+}
